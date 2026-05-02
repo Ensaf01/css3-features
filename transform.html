@@ -5,7 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transform</title>
     <style>
-        
+        body{
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .Container, .inner{
+            
+            height: 200px;
+            width: 200px;
+        }
+        .Container{
+            border: 1px solid orange;
+            background-color: aqua;
+        }
+        .inner{
+            border: 2px solid brown;
+            background-color: antiquewhite;
+            /* transform: scale(.50,.25); */
+            /* transform:rotate(40deg) */
+            /* transform: scale(.5) rotate(45deg)translateX(100px)translateY(-150px); */ 
+            /* if write multiple time transform then last transform will work,that why we comment kore rekhechi tai aktar moddhe sob kora ucit */
+        }
+        .inner:hover{
+            transform: rotate(45deg) translateZ(100px) scale(0.7) skewY(50deg);
+            /* skew mane chepta kora ba flat kore deya */
+        }
     </style>
 </head>
 <body>
