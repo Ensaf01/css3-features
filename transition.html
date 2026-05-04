@@ -11,12 +11,18 @@
             border: 3px solid tomato;
             background-color: aqua;
             /* transition: width 5s linear 3s,background-color 2s; */
-            transition: transform 3s;
+            /* transition name | duration |easing function | delay */
+             transition: width 5s linear 2s;
+            /* transition: transform 3s; */
+           
         }
         .box:hover{
-            /* width: 300px; */
-            transform: rotate(45deg) scale(1.6) translateX(100px);
-            background-color: rgb(4, 98, 73);
+            /* transform: scale(1.6)rotate(45deg) translateY(50px);-> hover korle box left dike 150px move korbe then 45 degree angle ghurbe,then scale 1.6 mane aktu boro hobe,and translayte Y hobe niche dik and color green and upore box a transition korechi ,jodi transform hoy seta 3s dhore kaj korbe */
+            margin-left: 150px;
+            width: 300px;
+            /* background-color: rgb(4, 98, 73);
+            transform: scale(1.6)rotate(45deg) translateY(50px); */
+            
         }
     </style>
 </head>
