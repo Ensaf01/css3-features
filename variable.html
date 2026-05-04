@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable</title>
+    <style>
+        /* sob place a same color ,if some one say please change the color steelblue to red or purple ,then it will be difficult ,so we use custome variable for this reason*/
+        :root{
+            --primary-color:purple;
+            --secondary-color:blue;
+            --font-size:40px;
+        }
+        h1{
+            color:var(--primary-color);
+        }
+        h5{
+            background-color: steelblue;
+        }
+        .box{
+            border: 2px solid var(--primary-color);
+            /* width: 80%; */
+            width: calc(100% - 300px);
+            /* 100% theke 300 pixel bhad,and - age pore space dite hobe */
+        }
+        .box p{
+            color: var(--primary-color);
+            font-size: var(--font-size);
+        }
+        .sidebar{
+            background-color: aquamarine;
+        }
+        .content{
+            background-color: lightblue;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 500px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+            /* grid-template-columns: 200px ; */
+            /* akhne 100% theke 200 bhade ja thkabe ta main content nibe ,but scroll chole asbe for 20ps gap,so 20px also bhad dite hobe */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>My Custom Properties</h2>
+    <h5>also commonly known as css variables</h5>
+    <div class="box">
+        <h3>I am doing something</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellat non dolore laboriosam repellendus. Voluptatum odio neque vel ducimus, nam in nulla similique repudiandae aperiam eaque excepturi cupiditate voluptatem commodi.</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main content</div>
+    </div>
+</body>
+</html>
