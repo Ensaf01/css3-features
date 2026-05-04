@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes ping-pong {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 550px;
+            }
+        }
+        @keyframes bounce {
+            0% {
+                top:0px;
+                left:0px;
+
+            }
+            25%{
+                left:100px;
+                top:250px;
+                background-color: aqua;
+            }
+            50%{
+                left:200px;
+                top: 0px;
+                background-color: blueviolet;
+                
+            }
+            75%{
+                left:300px;
+                top:250px;
+                background-color: chartreuse;
+                transform: scale(2);
+                /* ball size double */
+                
+            }
+            100%{
+                left:400px;
+                top:0px;
+
+            }
+        }
+
+        .stage {
+            border: 2px solid steelblue;
+            width: 450px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .ball {
+            height: 50px;
+            width: 50px;
+            background: darkcyan;
+            border-radius: 50%;
+            position: relative;
+            /* animation: ping-pong 1s ease-in-out 0s infinite alternate; */
+            animation: bounce 2s ease 1s infinite none ;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Explore Animation</h2>
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>

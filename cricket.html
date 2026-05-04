@@ -17,9 +17,6 @@
             transform-origin: top right;
 
         }
-        .field:hover .ball{
-            transform: translate(500px, -300px);
-        }
         .ball{
             height: 50px;
             width: 50px;
@@ -27,8 +24,13 @@
             border-radius: 50%;
             position: relative;
             left: 559px;
+            /* margin-left: 559px; */
             transition: transform 1s ease-out .3s;
         }
+        .field:hover .ball{
+            transform: translate(500px, -300px);
+        }
+        
     </style>
 </head>
 <body>
